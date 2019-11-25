@@ -1,5 +1,5 @@
 view: facebook_campaigns {
-  sql_table_name: facebook_ads.campaigns ;;
+  sql_table_name: facebookads.campaigns_view ;;
 
   dimension: id {
     primary_key: yes

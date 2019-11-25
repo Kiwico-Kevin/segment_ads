@@ -1,5 +1,5 @@
 view: ad_performance_reports {
-  sql_table_name: adwords.ad_performance_reports ;;
+  sql_table_name: adwords.ad_performance_reports_view ;;
 
 ##### This table is ad performance, segmented by day #####
 
