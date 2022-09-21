@@ -62,6 +62,12 @@ explore: facebook_insights {
     relationship: many_to_one
   }
 
+  join: completed_order {
+    type: left_outer
+    sql_on: ${completed_order.utm_ad} = ${facebook_ads.id} AND ${completed_order.utm_medium} = 'SMM' AND ${completed_order.utm_source} LIKE '%Facebook%' ;;
+    relationship: many_to_one
+  }
+
   join: facebook_ad_sets {
     type: left_outer
     sql_on: ${facebook_ads.adset_id} = ${facebook_ad_sets.id} ;;
